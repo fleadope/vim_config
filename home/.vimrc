@@ -10,6 +10,16 @@ set hidden
 " save the last 100 commands/search terms
 set history=100
 
+" turn filetype settings off so that stuff gets loaded from pathogen
+filetype off
+
+" use vundle for package management
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+filetype on
+filetype plugin indent on
+
 " use ; for <Leader>
 let mapleader = ";"    
 
@@ -29,15 +39,18 @@ let mapleader = ";"
 " I - don't give the intro message when starting Vim.
 set shortmess=filmnrxtTI
 
-" turn filetype settings off so that stuff gets loaded from pathogen
-filetype off
-
-" use pathogen to load plugins/etc.
-call pathogen#runtime_append_all_bundles()
 
 " turn on all filetype settings, syntax, etc.
 filetype plugin indent on
 syntax on
 
+" load bundles
+runtime! bundles.vim
+
 " load everything else in its own config file
 runtime! config/**/*
+"
+" Include user's local vim config
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
