@@ -1,7 +1,6 @@
 " Bundles
 Bundle "Align"
 Bundle "AsNeeded"
-Bundle "AutoClose"
 Bundle "AutoComplPop"
 Bundle "BufOnly.vim"
 Bundle "Color-Sampler-Pack"
