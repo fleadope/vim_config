@@ -8,5 +8,5 @@
 .DS_Store
 home/.vim/yankring_history_v2.txt
 home/.vim/config/private/*
-home/.vim/bundle/*/**
-
+home/.vim/bundle/**
+home/.vim/vundle.git/**
