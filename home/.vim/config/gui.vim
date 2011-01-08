@@ -4,7 +4,7 @@
 
 " only execute the contents of this file if the GUI is in use.
 if has("gui_running")
-   set transp=8
+   " set transp=8
   
    "" gui options
    " a - Autoselect
