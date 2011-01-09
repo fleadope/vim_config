@@ -51,6 +51,13 @@ runtime! bundles.vim
 runtime! config/**/*
 "
 " Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+let local_config = expand('~/.vimrc.local')
+if filereadable(local_config)
+  exe "source" local_config
+endif
+
+" Include user's machine vim config
+let machine_config = expand('~/.vimrc.') . hostname()
+if filereadable(machine_config)
+  exe "source" machine_config
 endif
