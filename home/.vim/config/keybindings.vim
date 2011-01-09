@@ -17,12 +17,6 @@ map <Leader>w :w!<CR>
 " ;q closes a vim-window
 map <Leader>q :q!<CR>
 
-" navigate among windows using ;[hjkl]
-map <Leader>h <C-W>h
-map <Leader>j <C-W>j
-map <Leader>k <C-W>k
-map <Leader>l <C-W>l
-
 " use C-j and C-k to 'bubble' lines (see
 " http://vimcasts.org/episodes/bubbling-text/)
 map <C-j> ddp
@@ -45,7 +39,6 @@ noremap ` '
 
 nnoremap ;; :
 
-map <Leader>bu :BundleSearch
 map <Leader>bi :BundleInstall<CR>
 
 nnoremap j gj
@@ -117,7 +110,7 @@ map <silent><leader>CT :retab<cr>
 map <silent><Leader>fmt ggVG=''
 
 " Open current buffer in a new split
-map <leader>s <C-w>v<C-w>l
+map <leader>sc <C-w>v<C-w>l
 
 " Toggle spelling hints
 nmap <silent> <leader>ts :set spell!<cr>
