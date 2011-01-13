@@ -185,7 +185,13 @@ call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
 call s:DefineCommand("mkdir", "Mkdir")
 
-" Include user's local vim config
+" Include user's local gvim config
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
+endif
+
+" Include user's machine gvim config
+let machine_config = expand('~/.gvimrc.') . hostname()
+if filereadable(machine_config)
+  exe "source" machine_config
 endif
