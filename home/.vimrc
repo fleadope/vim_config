@@ -4,13 +4,9 @@
 " don't try to play nice with vi
 set nocompatible
 
-" allow buffers to be hidden when they're not saved
-set hidden
+autocmd!
 
-" save the last 100 commands/search terms
-set history=100
-
-" turn filetype settings off so that stuff gets loaded from pathogen
+" turn filetype settings off so that stuff gets loaded from vundle
 filetype off
 
 " use vundle for package management
