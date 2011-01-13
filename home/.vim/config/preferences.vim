@@ -42,8 +42,6 @@ set smarttab
 " Backups
 set history=1000
 set undolevels=1000
-set backupdir=/tmp/
-set directory=/tmp/
 
 " Searching
 set ignorecase
