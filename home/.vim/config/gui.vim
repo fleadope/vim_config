@@ -14,5 +14,5 @@ if has("gui_running")
    set guioptions=ac
 
    set lines=60
-   set columns=180
+   set columns=120
 endif
