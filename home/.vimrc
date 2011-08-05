@@ -1,6 +1,8 @@
 " Globally applicable settings should be applied here, as well as anything else
 " that needs to be loaded before the config files get executed.
-
+"
+" Make sure vim works with RVM: seehttp://gabebw.wordpress.com/2010/08/02/rails-vim-rvm-and-a-curious-infuriating-bug/ 
+set shell=bash
 " don't try to play nice with vi
 set nocompatible
 
@@ -13,11 +15,14 @@ filetype off
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
+" load bundles
+runtime! bundles.vim
+
 filetype on
 filetype plugin indent on
 
 " use ; for <Leader>
-let mapleader = ";"    
+let mapleader = ";"
 
 "" shortmess settings:
 " f - use "(3 of 5)" instead of "(file 3 of 5)"
@@ -40,8 +45,6 @@ set shortmess=filmnrxtTI
 filetype plugin indent on
 syntax on
 
-" load bundles
-runtime! bundles.vim
 
 " load everything else in its own config file
 runtime! config/**/*
