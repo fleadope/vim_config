@@ -39,7 +39,7 @@ noremap ` '
 
 nnoremap ;; :
 
-map <Leader>bi :BundleInstall<CR>
+map <Leader>bi :!bundle install<CR>
 
 nnoremap j gj
 nnoremap k gk
@@ -117,3 +117,5 @@ nmap <silent> <leader>ts :set spell!<cr>
 
 " Reload ctags
 map <leader>rt :!ctags --extra=+f -R *<cr><cr>
+
+:iab dbg require 'ruby-debug'; debugger
