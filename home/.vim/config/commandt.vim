@@ -4,6 +4,8 @@
 
 " no need to explicitly define keybinding, Command-T sets <Leader>t binding by
 " default
+map <leader>b :CommandTBuffer<cr>
+map <leader>t :CommandT<cr>
 
 " Always display and search dotfiles/dotdirectories
 let g:CommandTAlwaysShowDotFiles = 1
