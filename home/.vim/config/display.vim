@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " use the desert256 colorscheme (works better with console than zenburn)
-colorscheme desert256
+:" olorscheme desert256
 
 set laststatus=2   " always display a status line
 set number         " show line numbers
