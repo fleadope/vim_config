@@ -14,7 +14,7 @@ Bundle "ack.vim"
 Bundle "argtextobj.vim"
 Bundle "autocorrect.vim"
 Bundle "bufexplorer.zip"
-bundle 'Buffergator'
+Bundle 'Buffergator'
 Bundle "cucumber.zip"
 Bundle "endwise.vim"
 Bundle "file-line"
